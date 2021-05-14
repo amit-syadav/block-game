@@ -8,6 +8,7 @@
 
 * {
   box-sizing: border-box;
+  /* box-sizing: content-box; */
 }
 
 body {
@@ -16,11 +17,18 @@ body {
   margin: auto;
   max-width: 60rem;
   color: #d8edea;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("..//images//bg-block.jpg"); */
   background: radial-gradient(
     circle,
     rgba(175, 196, 174, 1) 0%,
     rgba(104, 204, 191, 1) 89%,
     rgba(94, 191, 178, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    #000 0%,
+    rgb(2 8 7 / 70%) 89%,
+    rgb(5 15 14 / 78%) 100%
   );
 }
 
@@ -61,17 +69,22 @@ div {
 
 .score-display {
   font-size: 5rem;
-  color: rgb(133, 121, 107, 0.5);
+  color: rgb(253, 253, 253);
 }
 
 .game-area {
   display: flex;
   justify-content: center;
+  margin: 30px
 }
+.border{
+  border:floralwhite 8px solid;
+  border-radius: 10px;
 
+}
 .game {
-  height: 0;
-  width: 300px;
+  height: auto;
+  width: auto;
 }
 
 .grid {
@@ -94,7 +107,15 @@ div {
   width: 8rem;
   height: 8rem;
 }
+/* #img-icon {
+  background-image: url(../images/sage.jpg);
+  width: 10px;
+  height: 100;
+}
 
+.img-icon img {
+  width: 100%; */
+}
 .block {
   background-image: url(../images/blue_block.png);
 }
@@ -187,10 +208,11 @@ div {
   width: 17.5rem;
   height: 25rem;
   background: #f0f0f0;
-  background-image: linear-gradient(#d0d0d0, #f0f0f0);
+  background-image: linear-gradient(#ee176899, #ede0e5);
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
-  color: #85796b;
+  color: #ffffff;
+  font-weight: 900;
 }
 
 .score,
@@ -198,7 +220,10 @@ div {
   padding-top: 1rem;
   font-size: 1.2rem;
 }
-
+.lines-display {
+  color: #ee1769fd;
+  font-weight: 900;
+}
 /*menu*/
 .container {
   max-width: 600px;
@@ -302,13 +327,14 @@ div {
   height: 100%;
   overflow: auto;
   background-color: rgba(24, 39, 51, 0.85);
+  /* display: none; */
 }
 
 .menu-content {
   text-align: center;
   width: 600px;
   align-items: center;
-  margin-top: 230px;
+  margin-top: 25%;
   justify-content: center;
   width: 200vw;
   height: 200vh;
@@ -317,8 +343,9 @@ div {
 }
 
 .rules {
-  font-size: 12px;
+  font-size: 18px;
   transition: color 0.4s ease;
+  line-height: 250%;
 }
 
 .key {
