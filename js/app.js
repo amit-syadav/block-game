@@ -209,11 +209,11 @@ document.addEventListener("DOMContentLoaded", () => {
         squares[index + currentPosition].classList.add("block2")
       );
       // start a new tetromino falling
+      myAudioClick.play();
       random = nextRandom;
       nextRandom = Math.floor(Math.random() * theTetrominoes.length);
       current = theTetrominoes[random][currentRotation];
       currentPosition = 4;
-      myAudioClick.play();
       draw();
       displayShape();
       addScore();

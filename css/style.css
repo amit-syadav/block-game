@@ -75,12 +75,12 @@ div {
 .game-area {
   display: flex;
   justify-content: space-evenly;
-  margin: 30px
+  margin: 30px;
 }
-.border{
-  border:floralwhite 8px solid;
+.border {
+  border: floralwhite 8px solid;
   border-radius: 10px;
-
+  transition: border-radius 1.9s ease;
 }
 .game {
   height: auto;
@@ -115,7 +115,7 @@ div {
 
 .img-icon img {
   width: 100%; */
-}
+/* } */
 .block {
   background-image: url(../images/blue_block.png);
 }
@@ -334,12 +334,12 @@ div {
   text-align: center;
   width: 600px;
   align-items: center;
-  margin-top: 25%;
+  margin-top: 5%;
   justify-content: center;
   width: 200vw;
-  height: 200vh;
+  height: 100vh;
   border-radius: 50%;
-  transition: all 0.8s ease;
+  transition: all 1.8s ease;
 }
 
 .rules {
